@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Apply Now</button>
+    <h1></h1>
+    <script>
+      function applyUs() {
+        let name = prompt("Please enter the your Name?");
+        let age = prompt("Please enter the your age?");
+        let h1 = document.querySelector("h1");
+        if (age >= 18) {
+          h1.innerHTML = "Hi " + name + "! Welcome to SheCodes!";
+        } else {
+          h1.innerHTML = "Sorry " + name + "! You cannot join to SheCodes!";
+        }
+      }
+      let apply = document.querySelector("button");
+      apply.addEventListener("click", applyUs);
+    </script>
+  </body>
+</html>
