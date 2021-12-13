@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinnamon Roll 🥯</title>
+    <style>
+        body{
+           background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);   
+        }
+        h1{text-align: center;
+            font-size: 40px;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: 400;
+        }
+           
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            border-radius: 30px;
+        }
+        h2{
+            text-align: center;
+            color: #800000;
+            font-weight: 100;
+            padding: 10px 10px;
+        }
+        p{
+            text-align: center;
+            word-spacing: 1.5px;
+            
+        }
+        .tradition{
+            text-align: center;
+            word-spacing: 1.5px;
+        }
+        .center{
+            text-align: center;
+            word-spacing: 1.5px;
+        }
+        
+        button {
+            margin: 0 auto;
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 15px 20px;
+            border-radius: 30px;
+            font-size: medium;
+            font-weight: 600;
+            line-height: normal;
+            background-color: #FF7F50;
+            transition: all 200ms ease-in-out;
+        }
+        button:hover {
+            background: white;
+            color: tomato;
+            cursor: pointer;
+        }
+        .like{
+            text-align: center;
+        }
+       .link{
+           display: block;
+           text-align: center;
+           
+       } 
+       
+    </style>
+  </head>
+  <body>
+    <h1>What is Cinnamon Roll?</h1>
+    <img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/318/original/Kanelbulle.jpg?1637354277'>
+    <p id="p1">
+      A cinnamon roll is a sweet roll commonly served in Northern Europe and
+      North America.
+    </p>
+    <h2>How to call Cinnamon roll with different language?</h2>
+    <p id="p2">
+      In Sweden it is called kanelbulle, in Denmark it is known as kanelsnegl,
+      in Norway <br />
+      is known as kanelbolle, skillingsboller or kanelsnurr, in Finland it is
+      known as<br />
+      korvapuusti, and in Estonia it is known as kaneelirull.In Austria and
+      Germany it is <br />
+      Zimtschnecke.
+    </p>
+    <hr/>
+    <h2 id="h22">Cinnamon Roll Traditions</h2>
+    
+       <div class="tradition">
+           <p id='p3'>In<span class="center"><em> <strong>Sweden and Finland</strong></em></span>, cinnamon rolls are traditionally enjoyed during a
+      coffee break, <br />
+      fika, which is a get-together with friends. National Cinnamon Bun Day
+      (Kanelbullens dag)<br />
+      is observed on October 4th in Sweden and Finland.In North America, it
+      is commonly <br />
+      for breakfast or dessert. When eaten for a breakfast in the U.S., it may
+      be served <br />
+      cream cheese frosting.</div>
+      <br/>
+      <br>
+               
+     
+       <div class="link">
+           <a href="https://en.wikipedia.org/wiki/Cinnamon_roll">
+         <strong>For more information please follow</strong></a>
+    </div>
+     
+            
+     <br/>
+     <div class="like">" Would like to taste it?"</div>
+   
+    </p>
+    <button>👉  Click to order</button>
+
+    <footer>Code by Lenali Weerakoon 👧</footer>
+    <script>
+        function button(){
+        let country=prompt("What is your prefered country (Finland, Denmark, Norway, North America?");
+        let quantity=prompt("Quantity of the product?");
+        let h1=document.querySelector("h1");
+        let img = document.querySelector("img");
+        let h2 = document.querySelector("h2");
+        let p1 = document.querySelector("#p1");
+        let p2 = document.querySelector("#p2");
+        let p3 = document.querySelector("#p3");
+        let h22 = document.querySelector("#h22");
+
+        img.src = "";
+        h2.innerHTML = "";
+        p1.innerHTML = "";
+        p2.innerHTML = "";
+        p3.innerHTML = "";
+        h22.innerHTML = "";
+
+        if ( country.toLowerCase() =="finland"){
+            h1.innerHTML= quantity +" kuvassa näkyvä tilausmäärä on valmis sinulle kahden päivän kuluessa <br /> Kiitos! <br /> Tervetuloa takaisin. 😊 <br/> <img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/317/original/Finish.jpg?1637354252' />" ;
+        }
+        else if(  country.toLowerCase() =="denmark"){
+             h1.innerHTML=quantity +" mængden af ordren vist på billedet vil være klar inden for to dage til dig <br /> Tak! <br /> Velkommen tilbage. 😊 <br/> <img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/316/original/Danish.jpg?1637354243' />" ;
+        }else if( country.toLowerCase() =="norway"){
+            h1.innerHTML=quantity+ " mengden av bestillingen som vises på bildet vil være klar innen to dager for deg <br /> Takk! <br /> Velkommen tilbake.😊 <br/> <img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/320/original/Norway.jpg?1637354295' />" ;
+        }else if
+        ( country.toLowerCase() =="sweden"){
+            h1.innerHTML=quantity +" kvantiteten av beställningen som visas i bilden kommer att vara klar inom två dagar för dig <br /> Tack! <br /> Välkommen tillbaka.😊 <br /> <img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/318/original/Kanelbulle.jpg?1637354277'" ;
+        }else if
+        ( country.toLowerCase() =="north america"){
+            h1.innerHTML=quantity+ " quantity of the order appeared in the image will be ready within two days for you <br /> Thank You!  <br /> Welcome back.😊 <br /> <img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/319/original/North_American.jpg?1637354286' />";
+        }else{
+            h1.innerHTML=quantity+ " quantity of the order appeared in the image will be ready within two days for you <br /> Thank You!  <br /> Welcome back.😊 <br /> <img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/318/original/Kanelbulle.jpg?1637354277' />";
+        }
+    }
+        let click= document.querySelector("button");
+        click.addEventListener("click",button);
+        
+    </script>
+  </body>
+</html>
+        
