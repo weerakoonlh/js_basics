@@ -1,2 +1,2 @@
-# js_asics
+# js_basics
 JavaScript Basics here
